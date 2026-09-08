@@ -1,5 +1,5 @@
 # For arm64e backward compatible support.
-export THEOS_PLATFORM_SDK_ROOT = /Applications/Xcode-15.4.0.app/Contents/Developer
+export THEOS_PLATFORM_SDK_ROOT = /Applications/Xcode_15.4.app/Contents/Developer
 export PREFIX = $(THEOS_PLATFORM_SDK_ROOT)/Toolchains/XcodeDefault.xctoolchain/usr/bin/
 
 ROOTLESS ?= 0
