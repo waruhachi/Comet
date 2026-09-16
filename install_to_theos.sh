@@ -9,11 +9,11 @@ make package FINALPACKAGE=1
 cp -Rv "./.theos/obj/Comet.framework" "$THEOS/lib"
 
 make clean
-make package FINALPACKAGE=1 ROOTLESS=1
+make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
 cp -Rv "./.theos/obj/Comet.framework" "$THEOS/lib/iphone/rootless"
 
 make clean
-make package FINALPACKAGE=1 ROOTHIDE=1
+make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
 cp -Rv "./.theos/obj/Comet.framework" "$THEOS/lib/iphone/roothide"
 
 echo "Successfully installed Comet"
