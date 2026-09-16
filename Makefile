@@ -11,6 +11,8 @@ PACKAGE_VERSION = 2.0.1
 # Rootless / Rootful settings
 ifeq ($(ROOTLESS),1)
 	THEOS_PACKAGE_SCHEME = rootless
+else ifeq ($(ROOTHIDE),1)
+	THEOS_PACKAGE_SCHEME = roothide
 endif
 
 include $(THEOS)/makefiles/common.mk

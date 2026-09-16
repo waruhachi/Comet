@@ -4,3 +4,6 @@ make package FINALPACKAGE=1
 
 make clean
 make package ROOTLESS=1 FINALPACKAGE=1
+
+make clean
+make package ROOTHIDE=1 FINALPACKAGE=1

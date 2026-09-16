@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import libroot
 
 internal extension Bundle {
     static var comet: Bundle {
-        Bundle(path: jbRootPath("/Library/Frameworks/Comet.framework/Bundle.bundle/"))!
+        Bundle(path: jbroot("/Library/Frameworks/Comet.framework/Bundle.bundle/"))!
     }
 }

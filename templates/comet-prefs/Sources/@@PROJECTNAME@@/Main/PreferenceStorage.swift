@@ -4,7 +4,7 @@ import Comet
 // MARK: - Internal
 
 final class PreferenceStorage: ObservableObject {
-    private static let registry: String = "/var/mobile/Library/Preferences/@@PACKAGENAME@@.plist"
+    private static let registry: String = jbroot("/var/mobile/Library/Preferences/@@PACKAGENAME@@.plist")
     /// Welcome to Comet
     /// By @ginsudev
     ///
